@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blocks/curvy",
+  "version": "0.1.0",
+  "title": "Curvy",
+  "category": "widgets",
+  "attributes": {
+    "enableTopCurve": {
+      "type": "boolean",
+      "default": true
+    },
+    "topWidth": {
+      "type": "number",
+      "default": 100
+    },
+    "topHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "topFlipX": {
+      "type": "boolean",
+      "default": false
+    },
+    "topFlipY": {
+      "type": "boolean",
+      "default": false
+    },
+    "topColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#ec4899"
+        },
+        "spacing": {
+          "padding": {
+            "top": "250px",
+            "bottom": "250px",
+            "left": "50px",
+            "right": "50px"
+          }
+        }
+      }
+    },
+    "enableBottomCurve": {
+      "type": "boolean",
+      "default": true
+    },
+    "bottomWidth": {
+      "type": "number",
+      "default": 100
+    },
+    "bottomHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "bottomFlipX": {
+      "type": "boolean",
+      "default": false
+    },
+    "bottomFlipY": {
+      "type": "boolean",
+      "default": false
+    },
+    "bottomColor": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  },
+  "icon": "smiley",
+  "description": "Curvy shape divider to make page sections more interesting",
+  "example": {},
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "link": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "textdomain": "curvy",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
