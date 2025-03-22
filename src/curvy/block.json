@@ -5,6 +5,24 @@
 	"version": "0.1.0",
 	"title": "Curvy",
 	"category": "widgets",
+	"variations": [
+		{
+			"name": "top-only",
+			"title": "Curvy - Top only",
+			"attributes": {
+				"enableTopCurve": true,
+				"enableBottomCurve": false
+			}
+		},
+		{
+			"name": "bottom-only",
+			"title": "Curvy - Bottom only",
+			"attributes": {
+				"enableTopCurve": false,
+				"enableBottomCurve": true
+			}
+		}
+	],
 	"attributes": {
 		"enableTopCurve": {
 			"type": "boolean",
@@ -84,7 +102,22 @@
 
 	"icon": "smiley",
 	"description": "Curvy shape divider to make page sections more interesting",
-	"example": {},
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "core/heading",
+				"attributes": {
+					"content": "Hi there!"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "This is an example curvy block"
+				}
+			}
+		]
+	},
 	"supports": {
 		"html": false,
 		"color": {

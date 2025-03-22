@@ -8,6 +8,24 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Curvy',
 		'category' => 'widgets',
+		'variations' => array(
+			array(
+				'name' => 'top-only',
+				'title' => 'Curvy - Top only',
+				'attributes' => array(
+					'enableTopCurve' => true,
+					'enableBottomCurve' => false
+				)
+			),
+			array(
+				'name' => 'bottom-only',
+				'title' => 'Curvy - Bottom only',
+				'attributes' => array(
+					'enableTopCurve' => false,
+					'enableBottomCurve' => true
+				)
+			)
+		),
 		'attributes' => array(
 			'enableTopCurve' => array(
 				'type' => 'boolean',
@@ -77,7 +95,20 @@ return array(
 		'icon' => 'smiley',
 		'description' => 'Curvy shape divider to make page sections more interesting',
 		'example' => array(
-			
+			'innerBlocks' => array(
+				array(
+					'name' => 'core/heading',
+					'attributes' => array(
+						'content' => 'Hi there!'
+					)
+				),
+				array(
+					'name' => 'core/paragraph',
+					'attributes' => array(
+						'content' => 'This is an example curvy block'
+					)
+				)
+			)
 		),
 		'supports' => array(
 			'html' => false,
